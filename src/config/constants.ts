@@ -4,7 +4,7 @@ export const IS_PRODUCTION = process.env.NEXT_PUBLIC_IS_PRODUCTION === 'true'
 export const IS_DEV = process.env.NODE_ENV === 'development'
 
 export const GATEWAY_URL_PRODUCTION =
-  process.env.NEXT_PUBLIC_GATEWAY_URL_PRODUCTION || 'https://gateway.stg.holesky-safe.protofire.io'
+  process.env.NEXT_PUBLIC_GATEWAY_URL_PRODUCTION || 'https://gateway.holesky-safe.protofire.io'
 export const GATEWAY_URL_STAGING =
   process.env.NEXT_PUBLIC_GATEWAY_URL_STAGING || 'https://gateway.stg.holesky-safe.protofire.io'
 

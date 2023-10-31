@@ -6,7 +6,7 @@ const CookiePolicy: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'Safe{Wallet} – Cookie policy'}</title>
+        <title>{'Holesky Safe – Cookie policy'}</title>
       </Head>
 
       <main>

@@ -10,7 +10,7 @@ const Modules: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'Safe{Wallet} – Settings – Modules'}</title>
+        <title>{'Holesky Safe – Settings – Modules'}</title>
       </Head>
 
       <SettingsHeader />

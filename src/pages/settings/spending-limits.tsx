@@ -7,7 +7,7 @@ const SpendingLimitsPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'Safe{Wallet} – Settings – Spending limit'}</title>
+        <title>{'Holesky Safe – Settings – Spending limit'}</title>
       </Head>
 
       <SettingsHeader />

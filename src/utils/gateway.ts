@@ -31,6 +31,8 @@ export const isWalletConnectSafeApp = (url: string): boolean => {
   const WC_APP_URLS = [
     'https://apps-portal.safe.global/wallet-connect',
     'https://safe-apps.dev.5afe.dev/wallet-connect',
+    'https://apps.safe.protofire.io/wallet-connect',
+    'https://dev-apps.safe.protofire.io/wallet-connect',
   ]
   return WC_APP_URLS.includes(url)
 }

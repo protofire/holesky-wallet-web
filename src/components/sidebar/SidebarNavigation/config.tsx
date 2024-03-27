@@ -87,10 +87,10 @@ export const settingsNavItems = [
     label: 'Security & Login',
     href: AppRoutes.settings.securityLogin,
   },
-  {
-    label: 'Notifications',
-    href: AppRoutes.settings.notifications,
-  },
+  // {
+  //   label: 'Notifications',
+  //   href: AppRoutes.settings.notifications,
+  // },
   {
     label: 'Modules',
     href: AppRoutes.settings.modules,
@@ -118,10 +118,10 @@ export const generalSettingsNavItems = [
     label: 'Appearance',
     href: AppRoutes.settings.appearance,
   },
-  {
-    label: 'Notifications',
-    href: AppRoutes.settings.notifications,
-  },
+  // {
+  //   label: 'Notifications',
+  //   href: AppRoutes.settings.notifications,
+  // },
   {
     label: 'Security & Login',
     href: AppRoutes.settings.securityLogin,

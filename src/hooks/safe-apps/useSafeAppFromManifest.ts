@@ -12,13 +12,18 @@ type UseSafeAppFromManifestReturnType = {
   isLoading: boolean
 }
 
+const DEV_P2P_ORG_REG_EXP = /https:\/\/[0-9a-zA-Z\-]+\.dev-p2p.org/
+
 const useSafeAppFromManifest = (
   appUrl: string,
   chainId: string,
   safeAppData?: SafeAppData,
 ): UseSafeAppFromManifestReturnType => {
   const [data, error, isLoading] = useAsync<SafeAppDataWithPermissions>(() => {
-    if (appUrl && chainId && safeAppData) return fetchSafeAppFromManifest(appUrl, chainId)
+    /** @notice Allow to open deployment preview from dev-p2p.org */
+    if (appUrl && chainId && (safeAppData || DEV_P2P_ORG_REG_EXP.test(appUrl))) {
+      return fetchSafeAppFromManifest(appUrl, chainId)
+    }
   }, [appUrl, chainId, safeAppData])
 
   const emptyApp = useMemo(() => getEmptySafeApp(appUrl, safeAppData), [appUrl, safeAppData])

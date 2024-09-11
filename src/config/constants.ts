@@ -21,8 +21,8 @@ export const BEAMER_ID = process.env.NEXT_PUBLIC_BEAMER_ID || ''
 
 // Wallets
 export const WC_PROJECT_ID = process.env.NEXT_PUBLIC_WC_PROJECT_ID || ''
-export const TREZOR_APP_URL = 'app.safe.global'
-export const TREZOR_EMAIL = 'support@safe.global'
+export const TREZOR_APP_URL = 'https://holesky-safe.protofire.io'
+export const TREZOR_EMAIL = 'GS_Holesky@protofire.io'
 
 // Cypress
 export const CYPRESS_MNEMONIC = process.env.NEXT_PUBLIC_CYPRESS_MNEMONIC || ''

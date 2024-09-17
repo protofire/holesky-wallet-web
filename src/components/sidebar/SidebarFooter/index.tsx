@@ -3,21 +3,21 @@ import { useCallback, useEffect } from 'react'
 
 import {
   SidebarList,
-  // SidebarListItemButton,
-  // SidebarListItemIcon,
-  // SidebarListItemText,
+  SidebarListItemButton,
+  SidebarListItemIcon,
+  SidebarListItemText,
 } from '@/components/sidebar/SidebarList'
 import { /*BEAMER_SELECTOR,*/ loadBeamer } from '@/services/beamer'
 import { useAppDispatch, useAppSelector } from '@/store'
 import { selectCookies, CookieAndTermType } from '@/store/cookiesAndTermsSlice'
 import { openCookieBanner } from '@/store/popupSlice'
 // import BeamerIcon from '@/public/images/sidebar/whats-new.svg'
-// import HelpCenterIcon from '@/public/images/sidebar/help-center.svg'
+import HelpCenterIcon from '@/public/images/sidebar/help-center.svg'
 import { ListItem } from '@mui/material'
 import DebugToggle from '../DebugToggle'
-import { /*HELP_CENTER_URL,*/ IS_PRODUCTION } from '@/config/constants'
-// import Track from '@/components/common/Track'
-// import { OVERVIEW_EVENTS } from '@/services/analytics/events/overview'
+import { HELP_CENTER_URL, IS_PRODUCTION } from '@/config/constants'
+import Track from '@/components/common/Track'
+import { OVERVIEW_EVENTS } from '@/services/analytics/events/overview'
 import { useCurrentChain } from '@/hooks/useChains'
 
 const SidebarFooter = (): ReactElement => {
@@ -59,7 +59,7 @@ const SidebarFooter = (): ReactElement => {
             </SidebarListItemText>
           </SidebarListItemButton>
         </ListItem>
-      </Track>
+      </Track> */}
 
       <Track {...OVERVIEW_EVENTS.HELP_CENTER}>
         <ListItem disablePadding>
@@ -74,7 +74,7 @@ const SidebarFooter = (): ReactElement => {
             </SidebarListItemButton>
           </a>
         </ListItem>
-      </Track> */}
+      </Track>
     </SidebarList>
   )
 }

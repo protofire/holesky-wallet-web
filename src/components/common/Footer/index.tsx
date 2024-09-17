@@ -74,7 +74,15 @@ const Footer = (): ReactElement | null => {
               </ExternalLink>
             </li>
           </>
-        ) : null}
+        ) : (
+          <>
+            <li>
+              <ExternalLink href={HELP_CENTER_URL} noIcon sx={{ span: { textDecoration: 'underline' } }}>
+                Help
+              </ExternalLink>
+            </li>
+          </>
+        )}
 
         <li>
           <ExternalLink href={`${packageJson.homepage}/releases/tag/v${packageJson.version}`} noIcon>

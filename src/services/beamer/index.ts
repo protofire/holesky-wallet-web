@@ -18,30 +18,30 @@ export const loadBeamer = async (shortName: string): Promise<void> => {
   if (isBeamerLoaded()) return
 
   const BEAMER_URL = 'https://app.getbeamer.com/js/beamer-embed.js'
+  return
+  // if (!BEAMER_ID) {
+  //   console.warn('[Beamer] In order to use Beamer you need to add a `product_id`')
+  //   return
+  // }
 
-  if (!BEAMER_ID) {
-    console.warn('[Beamer] In order to use Beamer you need to add a `product_id`')
-    return
-  }
+  // window.beamer_config = {
+  //   product_id: BEAMER_ID,
+  //   selector: BEAMER_SELECTOR,
+  //   display: 'left',
+  //   bounce: false,
+  //   display_position: 'right',
+  //   [CustomBeamerAttribute.CHAIN]: shortName,
+  // }
 
-  window.beamer_config = {
-    product_id: BEAMER_ID,
-    selector: BEAMER_SELECTOR,
-    display: 'left',
-    bounce: false,
-    display_position: 'right',
-    [CustomBeamerAttribute.CHAIN]: shortName,
-  }
+  // scriptRef = document.createElement('script')
+  // scriptRef.type = 'text/javascript'
+  // scriptRef.defer = true
+  // scriptRef.src = BEAMER_URL
 
-  scriptRef = document.createElement('script')
-  scriptRef.type = 'text/javascript'
-  scriptRef.defer = true
-  scriptRef.src = BEAMER_URL
+  // const firstScript = document.getElementsByTagName('script')[0]
+  // firstScript?.parentNode?.insertBefore(scriptRef, firstScript)
 
-  const firstScript = document.getElementsByTagName('script')[0]
-  firstScript?.parentNode?.insertBefore(scriptRef, firstScript)
-
-  scriptRef.addEventListener('load', () => window.Beamer?.init(), { once: true })
+  // scriptRef.addEventListener('load', () => window.Beamer?.init(), { once: true })
 }
 
 export const updateBeamer = async (shortName: string): Promise<void> => {

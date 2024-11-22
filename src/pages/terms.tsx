@@ -591,7 +591,7 @@ const Terms: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'Zetachain Wallet – Terms'}</title>
+        <title>{'Holesky Wallet – Terms'}</title>
       </Head>
 
       <main>{<SafeTerms />}</main>

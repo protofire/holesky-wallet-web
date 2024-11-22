@@ -14,8 +14,8 @@ const CookiePolicy = () => {
       </p>
       <p>
         This Cookie Policy applies to our website at{' '}
-        <Link href="https://safe.zetachain.com" target="_blank" rel="noreferrer">
-          https://safe.zetachain.com
+        <Link href="https://holesky-safe.protofire.io" target="_blank" rel="noreferrer">
+          https://holesky-safe.protofire.io
         </Link>{' '}
         and sets out some further detail on how and why we use these technologies on our website.
       </p>

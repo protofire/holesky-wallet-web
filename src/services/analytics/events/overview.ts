@@ -31,6 +31,18 @@ export const OVERVIEW_EVENTS = {
     action: 'Remove from watchlist',
     category: OVERVIEW_CATEGORY,
   },
+  ADD_NEW_NETWORK: {
+    action: 'Add new network',
+    category: OVERVIEW_CATEGORY,
+  },
+  SUBMIT_ADD_NEW_NETWORK: {
+    action: 'Submit add new network',
+    category: OVERVIEW_CATEGORY,
+  },
+  CANCEL_ADD_NEW_NETWORK: {
+    action: 'Cancel add new network',
+    category: OVERVIEW_CATEGORY,
+  },
   DELETED_FROM_WATCHLIST: {
     action: 'Deleted from watchlist',
     category: OVERVIEW_CATEGORY,
@@ -117,6 +129,16 @@ export const OVERVIEW_EVENTS = {
     category: OVERVIEW_CATEGORY,
     //label: OPEN_SAFE_LABELS
   },
+  // Track clicks on links to Safe Accounts
+  EXPAND_MULTI_SAFE: {
+    action: 'Expand multi Safe',
+    category: OVERVIEW_CATEGORY,
+    //label: OPEN_SAFE_LABELS
+  },
+  SHOW_ALL_NETWORKS: {
+    action: 'Show all networks',
+    category: OVERVIEW_CATEGORY,
+  },
   // Track actual Safe views
   SAFE_VIEWED: {
     event: EventType.SAFE_OPENED,
@@ -140,16 +162,16 @@ export const OVERVIEW_EVENTS = {
     action: 'Proceed with transaction',
     category: OVERVIEW_CATEGORY,
   },
-  OPEN_ACTIVITY_APP: {
-    action: 'Open activity app from widget',
+  OPEN_STAKING_WIDGET: {
+    action: 'Open staking widget from banner',
     category: OVERVIEW_CATEGORY,
   },
-  HIDE_ACTIVITY_APP_WIDGET: {
-    action: 'Hide activity app widget',
+  HIDE_STAKING_BANNER: {
+    action: 'Hide staking banner',
     category: OVERVIEW_CATEGORY,
   },
-  OPEN_LEARN_MORE_ACTIVITY_APP: {
-    action: 'Activity app learn more',
+  OPEN_LEARN_MORE_STAKING_BANNER: {
+    action: 'Staking banner learn more',
     category: OVERVIEW_CATEGORY,
   },
 }

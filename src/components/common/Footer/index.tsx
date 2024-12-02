@@ -78,6 +78,11 @@ const Footer = (): ReactElement | null => {
           </>
         ) : null}
         <li>
+          <ExternalLink href={HELP_CENTER_URL} noIcon sx={{ span: { textDecoration: 'underline' } }}>
+            Help
+          </ExternalLink>
+        </li>
+        <li>
           <FooterLink href={getHref(AppRoutes.terms)}>Terms</FooterLink>
         </li>
         <li>

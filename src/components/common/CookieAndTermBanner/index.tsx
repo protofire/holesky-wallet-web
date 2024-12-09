@@ -131,14 +131,6 @@ export const CookieAndTermBanner = ({
 
             <Grid container alignItems="center" justifyContent="center" mt={4} gap={2}>
               <Grid item>
-                <Typography>
-                  <Button onClick={handleAccept} variant="text" size="small" color="inherit" disableElevation>
-                    Save settings
-                  </Button>
-                </Typography>
-              </Grid>
-
-              <Grid item>
                 <Button onClick={handleAcceptAll} variant="contained" color="secondary" size="small" disableElevation>
                   Accept all
                 </Button>

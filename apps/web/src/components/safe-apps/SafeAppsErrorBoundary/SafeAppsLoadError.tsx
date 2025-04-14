@@ -1,7 +1,7 @@
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import SvgIcon from '@mui/material/SvgIcon'
-import { DISCORD_URL } from '@/config/constants'
+//import { DISCORD_URL } from '@/config/constants'
 import NetworkError from '@/public/images/apps/network-error.svg'
 
 import css from './styles.module.css'
@@ -21,7 +21,7 @@ const SafeAppsLoadError = ({ onBackToApps }: SafeAppsLoadErrorProps): React.Reac
 
         <div>
           <Typography component="span">In case the problem persists, please report it through our </Typography>
-          <ExternalLink href={'https://safe-support.protofire.io/'} fontSize="medium">
+          <ExternalLink href="https://safe-support.protofire.io/" fontSize="medium">
             {' '}
             Form
           </ExternalLink>

@@ -10,7 +10,7 @@ import packageJson from '../../../../package.json'
 import ExternalLink from '../ExternalLink'
 import MUILink from '@mui/material/Link'
 import ProtofireLogo from '@/public/images/protofire-logo.svg'
-import { HELP_CENTER_URL, IS_DEV, IS_OFFICIAL_HOST } from '@/config/constants'
+import { HELP_CENTER_URL } from '@/config/constants'
 import darkPalette from '@/components/theme/darkPalette'
 
 const footerPages = [

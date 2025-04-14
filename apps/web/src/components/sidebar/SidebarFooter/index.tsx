@@ -10,10 +10,10 @@ import {
   // SidebarListItemIcon,
   // SidebarListItemText,
 } from '@/components/sidebar/SidebarList'
-import { BEAMER_SELECTOR, loadBeamer } from '@/services/beamer'
-import { useAppDispatch, useAppSelector } from '@/store'
+//import { loadBeamer } from '@/services/beamer'
+import { useAppSelector } from '@/store'
 import { CookieAndTermType, hasConsentFor } from '@/store/cookiesAndTermsSlice'
-import { openCookieBanner } from '@/store/popupSlice'
+//import { openCookieBanner } from '@/store/popupSlice'
 import HelpCenterIcon from '@/public/images/sidebar/help-center.svg'
 import { Link, ListItem, SvgIcon, Typography } from '@mui/material'
 import DebugToggle from '../DebugToggle'
@@ -22,26 +22,26 @@ import { useCurrentChain } from '@/hooks/useChains'
 import Track from '@/components/common/Track'
 import { OVERVIEW_EVENTS } from '@/services/analytics'
 import darkPalette from '@/components/theme/darkPalette'
-import SuggestionIcon from '@/public/images/sidebar/lightbulb_icon.svg'
+//import SuggestionIcon from '@/public/images/sidebar/lightbulb_icon.svg'
 import ProtofireLogo from '@/public/images/protofire-logo.svg'
 
 const SidebarFooter = (): ReactElement => {
-  const dispatch = useAppDispatch()
+  //const dispatch = useAppDispatch()
   const chain = useCurrentChain()
   const hasBeamerConsent = useAppSelector((state) => hasConsentFor(state, CookieAndTermType.UPDATES))
 
   useEffect(() => {
     // Initialise Beamer when consent was previously given
     if (hasBeamerConsent && chain?.shortName) {
-      loadBeamer(chain.shortName)
+      //loadBeamer(chain.shortName)
     }
   }, [hasBeamerConsent, chain?.shortName])
 
-  const handleBeamer = () => {
-    if (!hasBeamerConsent) {
-      dispatch(openCookieBanner({ warningKey: CookieAndTermType.UPDATES }))
-    }
-  }
+  // const handleBeamer = () => {
+  //   if (!hasBeamerConsent) {
+  //     dispatch(openCookieBanner({ warningKey: CookieAndTermType.UPDATES }))
+  //   }
+  // }
 
   return (
     <SidebarList>

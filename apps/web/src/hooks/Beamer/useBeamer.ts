@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 
 import { useAppSelector } from '@/store'
 import { CookieAndTermType, hasConsentFor } from '@/store/cookiesAndTermsSlice'
-import { loadBeamer, unloadBeamer, updateBeamer } from '@/services/beamer'
+import { unloadBeamer, updateBeamer } from '@/services/beamer'
 import { useCurrentChain } from '@/hooks/useChains'
 
 const useBeamer = () => {
@@ -15,7 +15,7 @@ const useBeamer = () => {
     }
 
     if (isBeamerEnabled) {
-      loadBeamer(chain.shortName)
+      //loadBeamer(chain.shortName)
     } else {
       unloadBeamer()
     }

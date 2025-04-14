@@ -35,7 +35,7 @@ const FooterLink = ({ children, href }: { children: ReactNode; href: string }): 
 
 const Footer = (): ReactElement | null => {
   const router = useRouter()
-  const isOfficialHost = useIsOfficialHost()
+  //const isOfficialHost = useIsOfficialHost()
 
   if (!footerPages.some((path) => router.pathname.startsWith(path))) {
     return null
@@ -48,7 +48,7 @@ const Footer = (): ReactElement | null => {
   return (
     <footer className={css.container}>
       <ul>
-        {isOfficialHost ? (
+        {/* {isOfficialHost ? (
           <>
             <li>
               <Typography variant="caption">&copy;2022–{new Date().getFullYear()} Core Contributors GmbH</Typography>
@@ -77,7 +77,7 @@ const Footer = (): ReactElement | null => {
               </ExternalLink>
             </li>
           </>
-        ) : null}
+        ) : null} */}
         <li>
           <ExternalLink href={HELP_CENTER_URL} noIcon sx={{ span: { textDecoration: 'underline' } }}>
             Help

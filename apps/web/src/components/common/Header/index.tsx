@@ -26,6 +26,7 @@ import { OVERVIEW_EVENTS, OVERVIEW_LABELS } from '@/services/analytics'
 import { useSafeTokenEnabled } from '@/hooks/useSafeTokenEnabled'
 //import { useIsOfficialHost } from '@/hooks/useIsOfficialHost'
 import { BRAND_NAME } from '@/config/constants'
+import { MigrationBanner } from '../MigrationBanner'
 
 type HeaderProps = {
   onMenuToggle?: Dispatch<SetStateAction<boolean>>
@@ -123,6 +124,10 @@ const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
           <NetworkSelector offerSafeCreation />
         </div>
       )}
+
+      <div className={css.element}>
+        <MigrationBanner />
+      </div>
     </Paper>
   )
 }

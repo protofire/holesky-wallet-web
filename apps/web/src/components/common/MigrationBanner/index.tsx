@@ -84,7 +84,7 @@ export const MigrationBanner = ({ children }: { children?: ReactElement }): Reac
               </Typography>
               <Typography mt={1} mb={1.5} variant="body2">
                 Due to the discontinuation of the network, Safe support on Holesky Network will be discontinued by the
-                end of Q2.
+                end of July, 2025.
               </Typography>
               <Typography mt={1} mb={2.5} variant="body2">
                 For testing purposes please migrate to the Safe on Hoodi testnet, available at:
